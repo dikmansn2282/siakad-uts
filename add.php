@@ -39,14 +39,14 @@
     if (isset($_POST['Submit'])) {
         $id = $_POST['id'];
         $nama = $_POST['nama'];
-        $kode_matakuliah = $_POST['kode_matakuliah'];
+        $kode_matakuliah = $_POST['matakuliah'];
         $deskripsi = $_POST['deskripsi'];
 
         // include database connection file
         include_once("config.php");
 
         // Insert user data into table
-        $result = mysqli_query($mysqli, "INSERT INTO matakuliah(id,nama,kode_matakuliah,deskripsi) VALUES('$id','$nama','$kode_matakuliah','$deskripsi')");
+        $result = mysqli_query($mysqli, "INSERT INTO matakuliah(id,nama,matakuliah,deskripsi) VALUES('$id','$nama','$matakuliah','$deskripsi')");
 
         // Show message when user added
         echo "Mata Kuliah berhasil ditambahkan. <a href='index.php'>Lihat Mata Kuliah</a>";
