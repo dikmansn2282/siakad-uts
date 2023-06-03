@@ -12,15 +12,15 @@
         <table width="25%" border="0">
             <tr>
                 <td>Nama</td>
-                <td><input type="text" name="Nama"></td>
+                <td><input type="text" name="nama"></td>
             </tr>
             <tr>
                 <td>Kode Mata Kuliah</td>
-                <td><input type="text" name="Kode Mata Kuliah"></td>
+                <td><input type="text" name="kode_matakuliah"></td>
             </tr>
             <tr>
                 <td>Deskripsi</td>
-                <td><input type="text" name="Deskripsi"></td>
+                <td><input type="text" name="deskripsi"></td>
             </tr>
             <tr>
                 <td></td>
