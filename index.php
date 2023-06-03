@@ -29,7 +29,7 @@ $result = mysqli_query($mysqli, "SELECT * FROM matakuliah ORDER BY id DESC");
             echo "<tr>";
             echo "<td>" . $user_data['id'] . "</td>";
             echo "<td>" . $user_data['nama'] . "</td>";
-            echo "<td>" . $user_data['matakuliah'] . "</td>";
+            echo "<td>" . $user_data['kode_matakuliah'] . "</td>";
             echo "<td>" . $user_data['deskripsi'] . "</td>";
             echo "<td><a href='edit.php?id=$user_data[id]'>Ubah</a> | <a href='delete.php?id=$user_data[id]'>Hapus</a></td></tr>";
         }
