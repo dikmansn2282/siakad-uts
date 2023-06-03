@@ -18,7 +18,6 @@ $result = mysqli_query($mysqli, "SELECT * FROM matakuliah ORDER BY id DESC");
     <table width='80%' border=1>
 
         <tr>
-            <th>ID</th>
             <th>Nama</th>
             <th>Kode Mata Kuliah</th>
             <th>Deskripsi</th>
@@ -27,7 +26,6 @@ $result = mysqli_query($mysqli, "SELECT * FROM matakuliah ORDER BY id DESC");
         <?php
         while ($user_data = mysqli_fetch_array($result)) {
             echo "<tr>";
-            echo "<td>" . $user_data['id'] . "</td>";
             echo "<td>" . $user_data['nama'] . "</td>";
             echo "<td>" . $user_data['kode_matakuliah'] . "</td>";
             echo "<td>" . $user_data['deskripsi'] . "</td>";
